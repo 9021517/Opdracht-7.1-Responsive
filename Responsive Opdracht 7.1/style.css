@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Standaard styling voor header en secties */
+.header {
+  background-color: #ff6347; 
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
+
+.section {
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #333;
+}
+
+/* Specifieke kleuren voor secties */
+.section-yellow {
+  background-color: #ffcc00; 
+}
+
+.section-orange {
+  background-color: #ffa500; 
+}
+
+.section-green {
+  background-color: #4caf50; 
+}
+
+/* Tablet versie */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+      background-color: #ff6969; 
+  }
+
+  .section-yellow {
+      background-color: #f22b2b; 
+  }
+
+  .section-orange {
+      background-color: #0f96f0; 
+  }
+
+  .section-green {
+      background-color: #111fbe; 
+  }
+}
+
+/* Mobiele versie */
+@media (max-width: 767px) {
+  .header {
+      background-color: #9679d9; 
+  }
+
+  .section-yellow {
+      background-color: #70e8e4; 
+  }
+
+  .section-orange {
+      background-color: #f589ff;
+  }
+
+  .section-green {
+      background-color: #384053; 
+  }
+
+  /* Extra element voor mobiel - dropdown knop */
+  .header::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: #ffffff; /* Donker vierkantje voor dropdown */
+      margin: 10px auto 0; /* Centraal onder de header */
+  }
+}
